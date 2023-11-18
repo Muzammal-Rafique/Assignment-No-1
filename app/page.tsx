@@ -1,5 +1,3 @@
-// pages/index.tsx
-
 import { FC } from 'react';
 
 const HomePage: FC = () => {
@@ -16,17 +14,7 @@ const HomePage: FC = () => {
 
   ];
   const videoId = 'wLJ5_C9v1EU';
-  // const handleSubmit = (event: React.FormEvent) => {
-  //   event.preventDefault();
-    
-  // };
-  const scrollToSection = (sectionId: string) => {
-    // Scroll to the specified section using JavaScript
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+ 
 
   return (
     <div>
@@ -34,22 +22,22 @@ const HomePage: FC = () => {
         <h1>Next.js Assignment No 1</h1>
         <nav style={{ display: 'flex', justifyContent: 'center', padding: '10px' }}>
           <button  style={buttonStyle}>
-            Table
+            <a href="#table">Table</a>
           </button>
           <button  style={buttonStyle}>
-            Form
+            <a href="#form">Form</a>
           </button>
           <button  style={buttonStyle}>
-            Image
+            <a href="#image">Image</a>
           </button>
           <button style={buttonStyle}>
-            Video
+            <a href="#video">Video</a>
           </button>
           <button  style={buttonStyle}>
-            List
+            <a href="#list">List</a>
           </button>
           <button  style={buttonStyle}>
-            Typography
+            <a href="typography"> Typography</a>
           </button>
         </nav>
       </header>
@@ -169,12 +157,74 @@ const HomePage: FC = () => {
 
         <section id="list" style={sectionStyle}>
           <h2>List Section</h2>
-          {/* Add list content here */}
+          <h3>Unordered List of Name of Departments</h3>
+      <ul>
+        <li>HR</li>
+        <li>Operational</li>
+        <li>Research</li>
+        <li>Finance</li>
+      </ul>
+      <h3>Ordered List of Skills</h3>
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>TypeScript</li>
+        <li>Next JS</li>
+      </ol>
         </section>
 
         <section id="typography" style={sectionStyle}>
           <h2>Typography Section</h2>
-          {/* Add typography content here */}
+          <h1>This is an H1 Heading</h1>
+      <h2>This is an H2 Heading</h2>
+      <h3>This is an H3 Heading</h3>
+      <h4>This is an H4 Heading</h4>
+      <h5>This is an H5 Heading</h5>
+      <h6>This is an H6 Heading</h6>
+
+      <p>This is a paragraph. It contains some text and demonstrates the use of the &lt;p&gt; tag.</p>
+
+      <strong>This text is strong and bold.</strong>
+
+      <em>This text is emphasized and italicized.</em>
+
+      <u>This text is underlined.</u>
+
+      <blockquote>
+        This is a blockquote. It is used to emphasize a section of text. This can be a long quote or a short quote.
+      </blockquote>
+
+      <code>This is inline code.</code>
+
+      <pre>
+        {`
+          This is a preformatted block of text.
+          It preserves both      spaces and line breaks.
+        `}
+      </pre>
+
+      <hr />
+
+      <sub>This is subscript text.</sub>
+      <sup>This is superscript text.</sup>
+
+      <abbr title="HyperText Markup Language">HTML</abbr>
+
+      <del>This text is deleted or struck through.</del>
+
+      <ins>This text is inserted or underlined.</ins>
+
+      <address>
+        This is an address element.
+        <br />
+        123 Example Street, City, Country
+      </address>
+
+      <cite>This is a citation.</cite>
+
+      <small>This text is smaller in size.</small>
+
+      <mark>This text is highlighted or marked.</mark>
         </section>
       </main>
     </div>
